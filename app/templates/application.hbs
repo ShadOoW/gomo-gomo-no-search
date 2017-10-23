@@ -1,5 +1,11 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
+<h1>Hello World</h1>
+
+{{#link-to 'gomo' class="button"}}
+    Home
+{{/link-to}}
+
+{{#link-to 'scientists' class="button"}}
+    Scientists
+{{/link-to}}
 
 {{outlet}}
