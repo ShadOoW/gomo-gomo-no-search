@@ -1,0 +1,3 @@
+.cover-image {
+  @include background($size: cover, $repeat: no-repeat, $position: 50% 50%);
+}

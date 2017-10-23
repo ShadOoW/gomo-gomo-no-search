@@ -1,0 +1,29 @@
+//-----------------------------------------
+// property: text-align
+// default: left if direction is ltr, and right if direction is rtl
+//-----------------------------------------
+.text-align-left    { text-align: left; }
+.text-align-right   { text-align: right; }
+.text-align-center  { text-align: center; }
+.text-align-justify { text-align: justify; }
+
+//@include breakpoint-up($small) {
+//  .text-align-left-ns    { text-align: left; }
+//  .text-align-right-ns   { text-align: right; }
+//  .text-align-center-ns  { text-align: center; }
+//  .text-align-justify-ns { text-align: justify; }
+//}
+//
+//@include breakpoint-range($small, $large) {
+//  .text-align-left-m    { text-align: left; }
+//  .text-align-right-m   { text-align: right; }
+//  .text-align-center-m  { text-align: center; }
+//  .text-align-justify-m { text-align: justify; }
+//}
+//
+//@include breakpoint-up($large) {
+//  .text-align-left-l    { text-align: left; }
+//  .text-align-right-l   { text-align: right; }
+//  .text-align-center-l  { text-align: center; }
+//  .text-align-justify-l { text-align: justify; }
+//}

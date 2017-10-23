@@ -1,0 +1,45 @@
+//-----------------------------------------
+// property: padding
+// default: normal
+//-----------------------------------------
+
+.padding-all-x0 { padding: 0 }
+.padding-all-x1 { padding: 1rem }
+.padding-all-x2 { padding: 2rem }
+.padding-all-x5 { padding: .5rem }
+
+.padding-all-x1-y5 { padding: 1rem 0.5rem }
+
+.padding-horizontal-x1 { padding: 0 1rem }
+.padding-horizontal-x2 { padding: 0 2rem }
+.padding-horizontal-x5 { padding: 0 0.5rem }
+
+.padding-vertical-x0-5 { padding: .5rem 0 }
+.padding-vertical-x1 { padding: 1rem 0 }
+.padding-vertical-x1-5 { padding: 1.5rem 0 }
+.padding-vertical-x2 { padding: 2rem 0 }
+
+.padding-bottom-x1   { padding-bottom: 1rem }
+.padding-bottom-x1-5 { padding-bottom: 1.5rem }
+.padding-bottom-x2   { padding-bottom: 2rem }
+
+.padding-top-x1 { padding-top: 1rem }
+.padding-top-x1-5 { padding-top: 1.5rem }
+.padding-top-x2 { padding-top: 2rem }
+
+.padding-left-x1 { padding-left: 1rem }
+.padding-right-x1 { padding-right: 1rem }
+
+@include breakpoint-up($small) {
+  .padding-left-x2-ns       { padding-left: 2rem }
+  .padding-horizontal-x1-ns { padding: 0 1rem }
+  .padding-horizontal-x5-ns { padding: 0 0.5rem }
+  .padding-horizontal-x4 { padding: 0 4rem }
+}
+
+@include breakpoint-up($large) {
+  .padding-all-x0-l { padding: 0}
+  .padding-horizontal-x2-l { padding: 0 2rem }
+  .padding-vertical-x1-l { padding: 1rem 0 }
+  .padding-vertical-x2-l { padding: 2rem 0 }
+}

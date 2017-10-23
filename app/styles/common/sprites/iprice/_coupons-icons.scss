@@ -1,0 +1,35 @@
+.icon-arrow-down-blue {
+    width: 12px;
+    height: 12px;
+    @include background("/images/sprites/iprice/coupons-icons-2x.png", 0px, 0px, 18px, 96px);
+}
+.icon-arrow-up-blue {
+    width: 12px;
+    height: 12px;
+    @include background("/images/sprites/iprice/coupons-icons-2x.png", 0px, -13px, 18px, 96px);
+}
+.icon-breadcrumb {
+    width: 18px;
+    height: 18px;
+    @include background("/images/sprites/iprice/coupons-icons-2x.png", 0px, -78px, 18px, 96px);
+}
+.icon-expiry-gray {
+    width: 12px;
+    height: 12px;
+    @include background("/images/sprites/iprice/coupons-icons-2x.png", 0px, -26px, 18px, 96px);
+}
+.icon-expiry {
+    width: 12px;
+    height: 12px;
+    @include background("/images/sprites/iprice/coupons-icons-2x.png", 0px, -39px, 18px, 96px);
+}
+.icon-valid-gray {
+    width: 12px;
+    height: 12px;
+    @include background("/images/sprites/iprice/coupons-icons-2x.png", 0px, -52px, 18px, 96px);
+}
+.icon-valid {
+    width: 12px;
+    height: 12px;
+    @include background("/images/sprites/iprice/coupons-icons-2x.png", 0px, -65px, 18px, 96px);
+}

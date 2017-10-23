@@ -1,0 +1,39 @@
+@mixin transition($values) {
+  -webkit-transition: $values;
+  -moz-transition: $values;
+  -o-transition: $values;
+  transition: $values;
+}
+
+@mixin animation-scale ($zoom) {
+  -moz-transform: scale($zoom);
+  -o-transform: scale($zoom);
+  -ms-transform: scale($zoom);
+  -webkit-transform: scale($zoom);
+  transform: scale($zoom);
+}
+
+@mixin animation ($time, $delay) {
+  -moz-transition: all $time ease-out $delay;
+  -o-transition: all $time ease-out $delay;
+  -ms-transition: all $time ease-out $delay;
+  -webkit-transition: all $time ease-out $delay;
+  transition: all $time ease-in $delay;
+}
+
+@mixin animation-translate ($posX, $posY) {
+  -moz-transform: translate($posX, $posY);
+  -o-transform: translate($posX, $posY);
+  -ms-transform: translate($posX, $posY);
+  -webkit-transform: translate($posX, $posY);
+  transform: translate($posX, $posY);
+}
+
+@mixin anime-flip() {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}

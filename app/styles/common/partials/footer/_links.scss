@@ -1,0 +1,49 @@
+#links {
+  // Footer bottom left aligned logo
+  @include background(
+    $url: '/images/logos/logo-crop.png',
+    $repeat: no-repeat,
+    $color: $turquoise,
+    $position: left bottom
+  );
+
+  // Space out sections
+  > div > div {
+    margin-left: 8rem;
+    margin-bottom: 2rem;
+    min-width: 200px;
+  }
+
+  padding: 4rem 0;
+
+  ul {
+    margin-bottom: .2rem;
+  }
+
+  // Space out vertically links in mobile
+  li {
+    height: 3rem;
+
+    @include breakpoint-up($medium) {
+      height: inherit;
+    }
+  }
+
+  // Space out Flag icons and text
+  i {
+    padding-left: 2.5rem;
+  }
+
+  // Typography for headers
+  h3 {
+    //@include font-large();
+    margin-bottom: 1rem;
+    color: $white;
+    font-weight: normal;
+  }
+
+  // Links
+  a {
+    color: $white;
+  }
+}

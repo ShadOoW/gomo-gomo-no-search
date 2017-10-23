@@ -1,0 +1,55 @@
+#banner {
+  height: 50px;
+  @include breakpoint-up($large) {
+    height: 60px;
+  }
+
+  .logo {
+    width: 118px;
+    height: 36px;
+
+    background-size: 118px 36px;
+    background-repeat: no-repeat;
+  }
+
+  .motto {
+    margin-left: 2rem;
+    font-size: 2.4rem;
+    line-height: 30px;
+    font-weight: normal;
+  }
+
+  .icon-burger {
+    margin-left: 1.5rem;
+  }
+
+  form {
+    margin-left: 2rem;
+
+    input {
+      max-width: 700px;
+      font-size: 16px;
+      line-height: 22px;
+      padding-right: 40px;
+
+      &.remove-radius {
+        border: 1px solid $turquoise;
+        border-radius: 5px 5px 0 0;
+        border-bottom: 1px solid $grey-lighter;
+      }
+    }
+
+    button {
+      right: 4px;
+      @include animation(0.3s, 0s);
+      &:hover {
+        @include animation(0.3s, 0s);
+        @include anime-flip();
+      }
+
+      @include breakpoint-up($large) {
+        right: 10px;
+      }
+    }
+  }
+}

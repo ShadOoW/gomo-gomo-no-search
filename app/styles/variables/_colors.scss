@@ -1,0 +1,37 @@
+// Default Colors
+$white: rgb(255, 255, 255);
+
+$turquoise: rgb(51, 204, 204); // #33cccc
+$blue: rgb(8, 106, 135); // #086a87
+$orange: rgb(255, 102, 51); // #ff6633
+
+$gray-base: rgb(221, 221, 221); // #ddd
+$gray-light: rgb(242, 242, 242); // #f2f2f2
+$gray-dark: rgb(102, 102, 102); // #666
+$gray-darker: rgb(51, 51, 51); // #333
+
+$black-light: rgb(51, 51, 51); // #222
+$black-semi: rgb(74, 74, 74); // #4a4a4a
+
+// Debug Colors
+$dev: #bff7f7;
+$qa: #fdaa8c;
+$staging: #dbfd7c;
+
+// Gradients
+$banner-background: linear-gradient(270deg, #15899D 0%, #30CCCD 100%);
+$text-background: linear-gradient(0deg, #000 0%, rgba(0, 0, 0, 0) 100%);
+
+// Generic
+$menuColor: rgb(94, 101, 104);
+
+$overlayColor: rgba(8, 106, 135, 0.7);
+$pcOverlayColor: rgba(255, 102, 51, 0.7);
+$codeOverlayColor: rgba(255, 102, 51, 0.2);
+$offerOverlayColor: rgba(8, 106, 135, 0.2);
+$expiredColor: rgb(161, 161, 161);
+
+//Search Suggestion
+$grey-lighter: rgba(161, 161, 161, 0.1);
+$green-lighter: rgba(51, 204, 204, 0.1);
+$black-alpha: rgba(0, 0, 0, 0.4);

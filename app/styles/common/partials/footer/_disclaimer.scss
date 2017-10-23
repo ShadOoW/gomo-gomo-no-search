@@ -1,0 +1,67 @@
+#disclaimer {
+  padding: 2rem 1rem;
+
+  .wrapper {
+    &.en, &.en-my, &.en-sg, &.en-hk, &.en-ph {
+
+      @include breakpoint-up($medium) {
+        @include background(
+          $url: '/images/logos/logo-footer_en.png',
+          $repeat: no-repeat,
+          $size: 127px 38px
+        );
+      }
+    }
+
+    &.id {
+      @include breakpoint-up($medium) {
+        @include background(
+          $url: '/images/logos/logo-footer_id.png',
+          $repeat: no-repeat,
+          $size: 127px 38px
+        );
+      }
+    }
+
+    &.th {
+      @include breakpoint-up($medium) {
+        @include background(
+          $url: '/images/logos/logo-footer_th.png',
+          $repeat: no-repeat,
+          $size: 127px 38px
+        );
+      }
+    }
+
+    &.vi, &.vn {
+      @include breakpoint-up($medium) {
+        @include background(
+          $url: '/images/logos/logo-footer_vn.png',
+          $repeat: no-repeat,
+          $size: 127px 38px
+        );
+      }
+    }
+
+    @include breakpoint-down($large) {
+      padding: 0 2rem;
+    }
+  }
+
+  // Typography
+  p, small {
+    font-size: 1.1rem;
+    @include breakpoint-up($small) {
+      margin-left: 147px;
+    }
+  }
+
+  /// Space out copyright from disclaimer.
+  small {
+    padding-bottom: 5px;
+  }
+
+  amp-img {
+    margin-right: 2rem;
+  }
+}

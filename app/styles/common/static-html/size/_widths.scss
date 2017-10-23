@@ -1,0 +1,103 @@
+//-----------------------------------------
+// property: width
+// default: auto
+//-----------------------------------------
+
+// width Scale
+.width-x1 { width: 1rem; }
+.width-x2 { width: 2rem; }
+.width-x4 { width: 4rem; }
+.width-x8 { width: 8rem; }
+
+// width Percentages - Based off of width of parent */
+.width-22  { width:  22%; }
+.width-25  { width:  25%; }
+.width-33  { width:  33.333%; }
+.width-50  { width:  50%; }
+.width-75  { width:  75%; }
+.width-90  { width: 90%;  }
+.width-100 { width: 100%; }
+
+/* Screen width Percentage */
+.viewport-width-25  { width:  25vw; }
+.viewport-width-50  { width:  50vw; }
+.viewport-width-75  { width:  75vw; }
+.viewport-width-100 { width: 100vw; }
+
+/* String Properties */
+.width-auto    { width: auto; }
+.width-inherit { width: inherit; }
+
+//@include breakpoint-up($small) {
+//  // width Scale
+//  .width-x1-ns { width: 1rem; }
+//  .width-x2-ns { width: 2rem; }
+//  .width-x4-ns { width: 4rem; }
+//  .width-x8-ns { width: 8rem; }
+//
+//  // width Percentages - Based off of width of parent */
+//  .width-25-ns  { width:  25%; }
+//  .width-50-ns  { width:  50%; }
+//  .width-75-ns  { width:  75%; }
+//  .width-100-ns { width: 100%; }
+//
+//  /* Screen width Percentage */
+//  .viewport-width-25-ns  { width:  25vw; }
+//  .viewport-width-50-ns  { width:  50vw; }
+//  .viewport-width-75-ns  { width:  75vw; }
+//  .viewport-width-100-ns { width: 100vw; }
+//
+//  /* String Properties */
+//  .width-auto-ns    { width: auto; }
+//  .width-inherit-ns { width: inherit; }
+//}
+//
+@include breakpoint-range($small, $large) {
+//  // width Scale
+//  .width-x1-m { width: 1rem; }
+//  .width-x2-m { width: 2rem; }
+//  .width-x4-m { width: 4rem; }
+//  .width-x8-m { width: 8rem; }
+//
+//  // width Percentages - Based off of width of parent */
+//  .width-25-m  { width:  25%; }
+//  .width-33-m  { width:  33.333%; }
+  .width-50-m  { width:  50%; }
+//  .width-75-m  { width:  75%; }
+//  .width-100-m { width: 100%; }
+//
+//  /* Screen width Percentage */
+//  .viewport-width-25-m  { width:  25vw; }
+//  .viewport-width-50-m  { width:  50vw; }
+//  .viewport-width-75-m  { width:  75vw; }
+//  .viewport-width-100-m { width: 100vw; }
+//
+//  /* String Properties */
+//  .width-auto-m    { width: auto; }
+//  .width-inherit-m { width: inherit; }
+}
+//
+@include breakpoint-up($large) {
+//  // width Scale
+//  .width-x1-l { width: 1rem; }
+//  .width-x2-l { width: 2rem; }
+//  .width-x4-l { width: 4rem; }
+//  .width-x8-l { width: 8rem; }
+//
+//  // width Percentages - Based off of width of parent */
+//  .width-25-l  { width:  25%; }
+  .width-33-l  { width:  33.333%; }
+//  .width-50-l  { width:  50%; }
+//  .width-75-l  { width:  75%; }
+//  .width-100-l { width: 100%; }
+//
+//  /* Screen width Percentage */
+//  .viewport-width-25-l  { width:  25vw; }
+//  .viewport-width-50-l  { width:  50vw; }
+//  .viewport-width-75-l  { width:  75vw; }
+//  .viewport-width-100-l { width: 100vw; }
+//
+//  /* String Properties */
+//  .width-auto-l    { width: auto; }
+//  .width-inherit-l { width: inherit; }
+}

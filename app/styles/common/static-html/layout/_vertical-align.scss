@@ -1,0 +1,29 @@
+//-----------------------------------------
+// property: vertical-align
+// default: baseline
+//-----------------------------------------
+//.vertical-align-baseline     { vertical-align: baseline; }
+.vertical-align-middle   { vertical-align: middle; }
+//.vertical-align-top      { vertical-align: top; }
+.vertical-align-bottom      { vertical-align: bottom; }
+
+//@include breakpoint-up($small) {
+//  .vertical-align-baseline-ns     { vertical-align: baseline; }
+//  .vertical-align-middle-ns      { vertical-align: middle; }
+//  .vertical-align-top-ns      { vertical-align: top; }
+//  .vertical-align-bottom-ns      { vertical-align: bottom; }
+//}
+//
+//@include breakpoint-range($small, $large) {
+//  .vertical-align-baseline-m     { vertical-align: baseline; }
+//  .vertical-align-middle-m      { vertical-align: middle; }
+//  .vertical-align-top-m      { vertical-align: top; }
+//  .vertical-align-bottom-m      { vertical-align: bottom; }
+//}
+//
+//@include breakpoint-up($large) {
+//  .vertical-align-baseline-l     { vertical-align: baseline; }
+//  .vertical-align-middle-l      { vertical-align: middle; }
+//  .vertical-align-top-l      { vertical-align: top; }
+//  .vertical-align-bottom-l      { vertical-align: bottom; }
+//}

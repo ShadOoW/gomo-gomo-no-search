@@ -1,0 +1,12 @@
+.bg-white { @include background($color: $white); }
+
+.bg-blue { @include background($color: $blue); }
+.bg-turquoise { @include background($color: $turquoise); }
+.bg-orange { @include background($color: $orange); }
+
+.bg-gray-base { @include background($color:  $gray-base); }
+.bg-gray-light { @include background($color:  $gray-light); }
+.bg-gray-dark { @include background($color:  $gray-dark); }
+
+.bg-banner-gradiant { @include background($color: $banner-background) }
+.bg-text-gradiant { @include background($color: $text-background) }

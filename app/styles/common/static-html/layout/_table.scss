@@ -1,0 +1,30 @@
+/*
+  This will set table to full width and then
+  all cells will be equal width
+*/
+
+.table-fixed {
+  table-layout: fixed;
+  width: 100%;
+}
+
+@include breakpoint-up($small) {
+  .table-fixed-ns {
+    table-layout: fixed;
+    width: 100%;
+  }
+}
+
+@include breakpoint-range($small, $large) {
+  .table-fixed-m {
+    table-layout: fixed;
+    width: 100%;
+  }
+}
+
+@include breakpoint-up($large) {
+  .table-fixed-l {
+    table-layout: fixed;
+    width: 100%;
+  }
+}

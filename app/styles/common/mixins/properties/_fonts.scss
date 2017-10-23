@@ -1,0 +1,23 @@
+@mixin font-family($font: null) {
+  @if $font {
+    font-family: $font;
+  }
+}
+
+@mixin font($size: null, $weight: null, $height: null, $color: null) {
+  @if $size {
+    font-size: $size;
+  }
+
+  @if $weight {
+    font-weight: $weight;
+  }
+
+  @if $height {
+    line-height: $height;
+  }
+
+  @if $color {
+    color: $color;
+  }
+}

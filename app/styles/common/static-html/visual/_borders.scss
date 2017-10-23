@@ -1,0 +1,48 @@
+//-----------------------------------------
+// property: border-style, border-width
+// default: none, initial
+//-----------------------------------------
+//.border-all { border-style: solid; border-width: 1px; }
+.border-top { border-top-style: solid; border-top-width: 1px; }
+//.border-right { border-right-style: solid; border-right-width: 1px; }
+.border-bottom-1px { border-bottom-style: solid; border-bottom-width: 1px; }
+.border-bottom-2px { border-bottom-style: solid; border-bottom-width: 2px; }
+//.border-left { border-left-style: solid; border-left-width: 1px; }
+.border-none { border-style: none; border-width: 0; }
+
+.border-color-gray-base { border-color: $gray-base }
+.border-color-gray-light { border-color: $gray-light }
+
+.border-radius-all-x8 { border-radius: .8rem }
+.border-radius-all-x5 { border-radius: .5rem }
+
+@include breakpoint-up($small) {
+  .border-bottom-2px-l {
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+  }
+//  .border-all-ns { border-style: solid; border-width: 1px; }
+//  .border-top-ns { border-top-style: solid; border-top-width: 1px; }
+//  .border-right-ns { border-right-style: solid; border-right-width: 1px; }
+//  .border-bottom-ns { border-bottom-style: solid; border-bottom-width: 1px; }
+//  .border-left-ns { border-left-style: solid; border-left-width: 1px; }
+//  .border-none-ns { border-style: none; border-width: 0; }
+}
+//
+//@include breakpoint-range($small, $large) {
+//  .border-all-m { border-style: solid; border-width: 1px; }
+//  .border-top-m { border-top-style: solid; border-top-width: 1px; }
+//  .border-right-m { border-right-style: solid; border-right-width: 1px; }
+//  .border-bottom-m { border-bottom-style: solid; border-bottom-width: 1px; }
+//  .border-left-m { border-left-style: solid; border-left-width: 1px; }
+//  .border-none-m { border-style: none; border-width: 0; }
+//}
+//
+//@include breakpoint-up($large) {
+//  .border-all-l { border-style: solid; border-width: 1px; }
+//  .border-top-l { border-top-style: solid; border-top-width: 1px; }
+//  .border-right-l { border-right-style: solid; border-right-width: 1px; }
+//  .border-bottom-l { border-bottom-style: solid; border-bottom-width: 1px; }
+//  .border-left-l { border-left-style: solid; border-left-width: 1px; }
+//  .border-none-l { border-style: none; border-width: 0; }
+//}

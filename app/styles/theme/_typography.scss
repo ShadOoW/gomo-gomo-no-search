@@ -1,0 +1,35 @@
+h1, .h1 { @include font($size: $font-size-heading-1); }
+h2, .h2 { @include font($size: $font-size-heading-2); }
+h3, .h3 { @include font($size: $font-size-heading-3); }
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
+  @include font(
+    $color: $black-light,
+    $weight: bold
+);
+}
+
+a {
+  color: $blue;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+small, .font-small {
+  @include font(
+    $size: $font-size-small
+  );
+}
+
+.font-base {
+  @include font(
+    $font-size-base
+  );
+}
+
+@include breakpoint-up($large) {
+  .h1-l {
+    @include font($size: $font-size-heading-1);
+  }
+}

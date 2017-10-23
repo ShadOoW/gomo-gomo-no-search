@@ -1,0 +1,56 @@
+//-----------------------------------------
+// property: position
+// default: static
+//-----------------------------------------
+.static { position: static; }
+.relative  { position: relative; }
+.absolute  { position: absolute; }
+.fixed  { position: fixed; }
+.center {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.bottom-x0 { bottom: 0; }
+.right-x0 { right: 0; }
+.left-x0 { left: 0; }
+.top-x0 { top: 0; }
+
+.right-x2 { right: 2rem; }
+
+//@include breakpoint-up($small) {
+//  .static-ns { position: static; }
+//  .relative-ns  { position: relative; }
+//  .absolute-ns  { position: absolute; }
+//  .fixed-ns  { position: fixed; }
+//  .center-ns {
+//    margin-right: auto;
+//    margin-left: auto;
+//  }
+//}
+//
+//@include breakpoint-range($small, $large) {
+//  .static-m { position: static; }
+//  .relative-m  { position: relative; }
+//  .absolute-m  { position: absolute; }
+//  .fixed-m  { position: fixed; }
+//  .center-m {
+//    margin-right: auto;
+//    margin-left: auto;
+//  }
+//}
+//
+@include breakpoint-up($large) {
+//  .static-l { position: static; }
+  .relative-l  { position: relative; }
+  .absolute-l  { position: absolute; }
+//  .fixed-l  { position: fixed; }
+//  .center-l {
+//    margin-right: auto;
+//    margin-left: auto;
+//  }
+
+  //.bottom-x0-l { bottom: 0; }
+  .right-x0-l { right: 0; }
+  .top-x1-l { top: 1rem; }
+}

@@ -1,0 +1,246 @@
+/* =============================================================================
+   Base
+   ========================================================================== */
+
+/*
+ * Corrects block display not defined in IE6/7/8/9 & FF3
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+/*
+ * 1. Improves visual focus of mouse in all browsers
+ * 2. Corrects text resizing oddly when font size is set using ems in IE6/7
+ *    http://clagnut.com/blog/348/#c790
+ * 3. Corrects page centering in all browsers regardless of content height
+ * 4. Improves visual appearance of containers during a delegated click in mSaf
+ *    www.yuiblog.com/blog/2010/10/01/quick-tip-customizing-the-mobile-safari-tap-highlight-color/
+ * 5. Corrects text resizing oddly after orientation change in all handhelds
+ *    www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/
+ */
+html {
+  /* 1 */
+  cursor: default;
+  /* 2 */
+  font-size: 100%;
+  /* 3 */
+  overflow-y: scroll;
+  /* 4 */
+  -webkit-tap-highlight-color: transparent;
+  /* 5 */
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/*
+ * sets body font size to 10px, as a reference point for using rem values for defining
+ * every other spacing or font-size in the rest of the projects.
+ */
+html {
+  @include font-family($font-family-base);
+  @include font(
+    $size: $font-size-base,
+    $weight: normal
+  );
+  overflow-x: hidden;
+
+  &.fonts-loading {
+    font-family: sans-serif;
+  }
+}
+
+/*
+ * Allows these element to inherit font-family from <HTML>
+ */
+input, textarea, select, button {
+  font-family: inherit;
+}
+
+/* 
+ * 1. Improves margins set oddly in IE6/7 FF3/4 S5 C10
+ * 2. Reset padding to match margin
+ * 3. Sets a better default value than 10px (cf above) for html elements.
+ */
+body,
+div,
+span,
+small,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+input,
+button,
+select,
+ul,
+figure,
+textarea {
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  padding: 0;
+  /* 3 */
+  @include font($size: $font-size-default, $color: $black-light);
+}
+
+/* =============================================================================
+   Reset Links
+   ========================================================================== */
+
+/*
+ * Default links to no underline on hover
+ */
+a {
+  text-decoration: none;
+}
+
+a:-webkit-any-link {
+  color: inherit;
+}
+
+/*
+ * Default links, buttons, form's submit and custom class cursor-pointer to cursor pointer
+ */
+a, button, input[type=submit], .cursor-pointer {
+  cursor: pointer;
+}
+
+/*
+ * Improves appearance when active or hovered in all browsers
+ * people.opera.com/patrickl/experiments/keyboard/test
+ */
+a,
+a:active,
+a:hover {
+  outline: none;
+}
+
+/*
+ * Addresses outline set oddly in C10
+ */
+a:focus {
+  outline: thin dotted;
+}
+
+/* =============================================================================
+   Reset Lists and Figure
+   ========================================================================== */
+
+/*
+ * Default list to no style
+ */
+ul {
+  list-style: none;
+}
+
+/*
+ * Remove webkit's margin list and figure
+ */
+ul, ol, figure, blockquote, dl, dd, hr {
+  //Webkit reset
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  -webkit-padding-start: 0;
+}
+
+/* =============================================================================
+   Reset Size Calculation
+   ========================================================================== */
+
+/*
+ * https://developer.mozilla.org/en/docs/Web/CSS/box-sizing
+ */
+*, *:before, *:after, .border-box {
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* =============================================================================
+   Reset Typography
+   ========================================================================== */
+/*
+ * Corrects style set incorrectly as 'bolder' in FF3/4 S4/5 C10
+*/
+b,
+strong {
+  font-weight: bold;
+}
+
+/* =============================================================================
+   Reset Embedded content
+   ========================================================================== */
+
+/*
+ * 1. Improves readability when inside 'a' in all browsers
+ * 2. Improves visual appearance when scaled in IE7
+ *    code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/
+ */
+img {
+  /* 1 */
+  border: none;
+  /* 2 */
+  -ms-interpolation-mode: bicubic;
+}
+
+/*
+ * Corrects overflow displayed oddly in IE9 
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* =============================================================================
+   Reset Forms
+   ========================================================================== */
+
+/*
+ * Improves appearance in all browsers
+ */
+button,
+input,
+select,
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+
+  outline: none;
+  vertical-align: baseline;
+}
+
+input, select, button {
+  border: 0;
+  border-radius: 0;
+}
+
+/* =============================================================================
+   Reset Tables
+   ========================================================================== */
+
+/* 
+ * Improves visual appearance in all browsers
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}

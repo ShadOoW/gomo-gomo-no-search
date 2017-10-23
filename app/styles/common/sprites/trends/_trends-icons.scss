@@ -1,0 +1,20 @@
+.icon-arrow-right {
+    width: 20px;
+    height: 20px;
+    @include background("/images/sprites/trends/trends-icons-2x.png", 0px, -37px, 20px, 57px);
+}
+.icon-breadcrumb {
+    width: 18px;
+    height: 18px;
+    @include background("/images/sprites/trends/trends-icons-2x.png", 0px, -18px, 20px, 57px);
+}
+.icon-crumb-left-arrow {
+    width: 4px;
+    height: 8px;
+    @include background("/images/sprites/trends/trends-icons-2x.png", 0px, 0px, 20px, 57px);
+}
+.icon-crumb-right-arrow {
+    width: 4px;
+    height: 8px;
+    @include background("/images/sprites/trends/trends-icons-2x.png", 0px, -9px, 20px, 57px);
+}

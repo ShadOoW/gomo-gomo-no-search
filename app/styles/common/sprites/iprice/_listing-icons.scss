@@ -1,0 +1,60 @@
+.icon-back-button {
+    width: 36px;
+    height: 36px;
+    @include background("/images/sprites/iprice/listing-icons-2x.png", 0px, -249px, 36px, 285px);
+}
+.icon-badge {
+    width: 36px;
+    height: 36px;
+    @include background("/images/sprites/iprice/listing-icons-2x.png", 0px, -138px, 36px, 285px);
+}
+.icon-best-deals {
+    width: 16px;
+    height: 16px;
+    @include background("/images/sprites/iprice/listing-icons-2x.png", 0px, -50px, 36px, 285px);
+}
+.icon-clear {
+    width: 10px;
+    height: 10px;
+    @include background("/images/sprites/iprice/listing-icons-2x.png", 0px, 0px, 36px, 285px);
+}
+.icon-close-white {
+    width: 36px;
+    height: 36px;
+    @include background("/images/sprites/iprice/listing-icons-2x.png", 0px, -101px, 36px, 285px);
+}
+.icon-drop-gray {
+    width: 12px;
+    height: 12px;
+    @include background("/images/sprites/iprice/listing-icons-2x.png", 0px, -24px, 36px, 285px);
+}
+.icon-filter {
+    width: 12px;
+    height: 12px;
+    @include background("/images/sprites/iprice/listing-icons-2x.png", 0px, -11px, 36px, 285px);
+}
+.icon-gender-1 {
+    width: 36px;
+    height: 36px;
+    @include background("/images/sprites/iprice/listing-icons-2x.png", 0px, -175px, 36px, 285px);
+}
+.icon-gender-2 {
+    width: 36px;
+    height: 36px;
+    @include background("/images/sprites/iprice/listing-icons-2x.png", 0px, -212px, 36px, 285px);
+}
+.icon-most-viewed {
+    width: 16px;
+    height: 16px;
+    @include background("/images/sprites/iprice/listing-icons-2x.png", 0px, -67px, 36px, 285px);
+}
+.icon-new-item {
+    width: 16px;
+    height: 16px;
+    @include background("/images/sprites/iprice/listing-icons-2x.png", 0px, -84px, 36px, 285px);
+}
+.icon-sort {
+    width: 12px;
+    height: 12px;
+    @include background("/images/sprites/iprice/listing-icons-2x.png", 0px, -37px, 36px, 285px);
+}

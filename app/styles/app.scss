@@ -1,3 +1,26 @@
-body {
-  background-color: purple;
-}
+// Import Functions
+@import 'common/mixins/index';
+
+//// Import Variables
+//@import 'variables/breakpoints';
+//@import 'variables/colors';
+//@import 'variables/font';
+//@import 'variables/misc';
+//
+//// Import Browsers Normalizer
+//@import 'common/normalize';
+//
+//// Import Default Theme
+//@import 'theme/index';
+//
+//// Import all HTML Static classes
+//@import 'common/static-html/index';
+//
+//// Import Partials
+//@import 'partials/index';
+
+// Shared Components
+//@import 'components/tags';
+
+//
+@import 'ember-bootstrap/bootstrap';

@@ -1,0 +1,13 @@
+@mixin size($width: null, $height: null) {
+  @if $width != null {
+    width: $width;
+  }
+
+  @if $height != null {
+    height: $height;
+  }
+}
+
+@mixin max-width-calc($width) {
+  max-width: calc(100% - #{$width});
+}

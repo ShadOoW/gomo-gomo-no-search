@@ -1,0 +1,36 @@
+/* The import order is important */
+
+// Visual
+@import 'visual/icon';
+@import 'visual/bg-colors';
+@import 'visual/colors';
+@import 'visual/image';
+@import 'visual/opacity';
+@import 'visual/borders';
+@import 'visual/overflow';
+//@import 'visual/outlines';
+@import 'visual/scrollbar';
+@import 'visual/debug';
+
+//  Layout
+@import 'layout/display';
+@import 'layout/flexbox';
+@import 'layout/position';
+@import 'layout/floats';
+//@import 'layout/table';
+@import 'layout/vertical-align';
+
+// Typography
+@import 'text/font-style';
+@import 'text/font-weight';
+@import 'text/text-align';
+@import 'text/text-decotation';
+@import 'text/typography';
+
+// Size
+@import 'size/heights';
+@import 'size/widths';
+
+// Spacing
+@import 'spacing/padding';
+@import 'spacing/margin';

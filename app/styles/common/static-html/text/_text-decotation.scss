@@ -1,0 +1,26 @@
+//-----------------------------------------
+// property: text-decoration
+// default: none
+//-----------------------------------------
+.text-decoration-strike    { text-decoration: line-through; }
+.text-decoration-underline { text-decoration: underline; }
+.text-decoration-none      { text-decoration: none; }
+
+
+@include breakpoint-up($small) {
+  .text-decoration-strike-ns    { text-decoration: line-through; }
+  .text-decoration-underline-ns { text-decoration: underline; }
+  .text-decoration-none-ns      { text-decoration: none; }
+}
+
+@include breakpoint-range($small, $large) {
+  .text-decoration-strike-m    { text-decoration: line-through; }
+  .text-decoration-underline-m { text-decoration: underline; }
+  .text-decoration-none-m      { text-decoration: none; }
+}
+
+@include breakpoint-up($large) {
+  .text-decoration-strike-l    { text-decoration: line-through; }
+  .text-decoration-underline-l { text-decoration: underline; }
+  .text-decoration-none-l      { text-decoration: none; }
+}

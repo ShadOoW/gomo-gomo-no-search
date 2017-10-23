@@ -1,0 +1,11 @@
+.dev {
+  @include background($color: $dev);
+}
+
+.qa {
+  @include background($color: $qa);
+}
+
+.staging {
+  @include background($color: $staging);
+}

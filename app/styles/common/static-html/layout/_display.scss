@@ -1,0 +1,54 @@
+//-----------------------------------------
+// property: display
+// default: inline
+//-----------------------------------------
+
+.none         { display: none; }
+.inline       { display: inline; }
+.block        { display: block; }
+.inline-block { display: inline-block; }
+.flex         { @include flexbox(); }
+.inline-flex  { @include inline-flex(); }
+.inline-table { display: inline-table; }
+.table        { display: table; }
+.table-cell   { display: table-cell; }
+.table-row    { display: table-row; }
+
+@include breakpoint-up($small) {
+  .none-ns         { display: none; }
+  .inline-ns       { display: inline; }
+  .block-ns        { display: block; }
+  .inline-block-ns { display: inline-block; }
+  .flex-ns         { @include flexbox(); }
+  .inline-flex-ns  { @include inline-flex(); }
+  .inline-table-ns { display: inline-table; }
+  .table-ns        { display: table; }
+  .table-cell-ns   { display: table-cell; }
+  .table-row-ns    { display: table-row; }
+}
+
+@include breakpoint-range($small, $large) {
+  .none-m         { display: none; }
+  .inline-m       { display: inline; }
+  .block-m        { display: block; }
+  .inline-block-m { display: inline-block; }
+  .flex-m         { @include flexbox(); }
+  .inline-flex-m  { @include inline-flex(); }
+  .inline-table-m { display: inline-table; }
+  .table-m        { display: table; }
+  .table-cell-m   { display: table-cell; }
+  .table-row-m    { display: table-row; }
+}
+
+@include breakpoint-up($large) {
+  .none-l         { display: none; }
+  .inline-l       { display: inline; }
+  .block-l        { display: block; }
+  .inline-block-l { display: inline-block; }
+  .flex-l         { @include flexbox(); }
+  .inline-flex-l  { @include inline-flex(); }
+  .inline-table-l { display: inline-table; }
+  .table-l        { display: table; }
+  .table-cell-l   { display: table-cell; }
+  .table-row-l    { display: table-row; }
+}

@@ -1,0 +1,22 @@
+//-----------------------------------------
+// property: font-style
+// default: normal
+//-----------------------------------------
+
+.font-style-italic { font-style: italic; }
+.font-style-normal { font-style: normal; }
+
+@include breakpoint-up($small) {
+  .font-style-italic-sm { font-style: italic; }
+  .font-style-normal-sm { font-style: normal; }
+}
+
+@include breakpoint-range($small, $large) {
+  .font-style-italic-m { font-style: italic; }
+  .font-style-normal-m { font-style: normal; }
+}
+
+@include breakpoint-up($large) {
+  .font-style-italic-l { font-style: italic; }
+  .font-style-normal-l { font-style: normal; }
+}

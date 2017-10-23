@@ -1,0 +1,26 @@
+//-----------------------------------------
+// property: float
+// default: none
+//-----------------------------------------
+.float-left  { float: left;  display: inline; }
+.float-right { float: right; display: inline; }
+.clear-both { clear: both; }
+.float-none  { float: none; }
+
+//@include breakpoint-up($small) {
+//  .float-left-ns { float: left; display: inline; }
+//  .float-right-ns { float: right; display: inline; }
+//  .float-none-ns { float: none; }
+//}
+//
+//@include breakpoint-range($small, $large) {
+//  .float-left-m { float: left; display: inline; }
+//  .float-right-m { float: right; display: inline; }
+//  .float-none-m { float: none; }
+//}
+//
+//@include breakpoint-up($large) {
+//  .float-left-l { float: left; display: inline; }
+//  .float-right-l { float: right; display: inline; }
+//  .float-none-l { float: none; }
+//}

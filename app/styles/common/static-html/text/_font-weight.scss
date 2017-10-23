@@ -1,0 +1,22 @@
+//-----------------------------------------
+// property: font-style
+// default: normal
+//-----------------------------------------
+
+.font-weight-bold { font-weight: bold; }
+.font-weight-normal { font-weight: normal; }
+
+@include breakpoint-up($small) {
+  .font-weight-bold-s { font-weight: bold; }
+  .font-weight-normal-s { font-weight: normal; }
+}
+
+@include breakpoint-range($small, $large) {
+  .font-weight-bold-m { font-weight: bold; }
+  .font-weight-normal-m { font-weight: normal; }
+}
+
+@include breakpoint-up($large) {
+  .font-weight-bold-l { font-weight: bold; }
+  .font-weight-normal-l { font-weight: normal; }
+}

@@ -1,0 +1,24 @@
+@mixin background(
+  $url: null,
+  $repeat: null,
+  $position: null,
+  $size: null,
+  $color: null
+) {
+  $image: null;
+
+  @if $url != null {
+    $image: url($url);
+  }
+
+  @if ($url == null and $repeat == null and $position == null and $color == null and $size != null) {
+    background-size: $size;
+  } @else if $size == null {
+    background: $image $repeat $position $size $color;
+  } @else {
+    @if $size != null and $position == null {
+      $position: 0 0;
+    }
+    background: $image $repeat #{$position} / #{$size} $color;
+  }
+}
