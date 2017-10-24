@@ -1,7 +1,4 @@
-import Ember from '@ember';
+import Component from '@ember/component';
 
-export default Ember.Component.extend({
-  parser: Ember.inject.service('parser'),
-
-
+export default Component.extend({
 });
