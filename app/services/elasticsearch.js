@@ -3,13 +3,13 @@ import Service from '@ember/service';
 // Elasticsearch
 import es from 'npm:elasticsearch';
 // Rx
-// import Rx from 'npm:rxjs/Rx';
+import Rx from 'npm:rxjs/Rx';
 
 export default Service.extend({
   // Elasticsearch
   client: null,
   // Rx
-  // $isConnected: new Rx.Subject(),
+  $indices: new Rx.Subject(),
 
   // Public API
   connect (host) {
@@ -38,7 +38,7 @@ export default Service.extend({
 
   getIndices () {
     this.get('client').cat.indices({format: 'json'}, (error, resp) => {
-      console.log(resp);
+      this.get('$indices').next(resp);
     });
   }
 });

@@ -8,9 +8,9 @@ export default Component.extend({
   selection: [],
 
   init () {
-    // this.get('elastic').$isConnected.subscribe(
-    //   value => console.log(value)
-    // );
+    this.get('elasticsearch').$indices.subscribe(
+      value => this.set('content', value)
+    );
 
     this._super();
   },
