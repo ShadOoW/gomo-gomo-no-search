@@ -6,15 +6,17 @@ const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 module.exports = function(defaults) {
   let app = new EmberApp(defaults, {
     'ember-bootstrap': {
-      'bootstrapVersion': 4,
-      'importBootstrapFont': false,
-      'importBootstrapCSS': false
+      'bootstrapVersion': 3,
+      'importBootstrapCSS': false,
+      'importBootstrapFont': true
     }
   });
 
   // Use `app.import` to add additional libraries to the generated
   // output files.
-  //
+  // app.import('node_modules/@reactivex/rxjs/index.js');
+  // app.import('node_modules/rxjs/Subject.js');
+
   // If you need to use different assets in different
   // environments, specify an object as the first parameter. That
   // object's keys should be the environment name and the values

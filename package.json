@@ -16,10 +16,12 @@
     "test": "ember test"
   },
   "devDependencies": {
-    "bootstrap": "^4.0.0-alpha.6",
+    "bootstrap-sass": "^3.3.7",
     "broccoli-asset-rev": "^2.4.5",
+    "elasticsearch": "^13.3.1",
     "ember-ajax": "^3.0.0",
     "ember-bootstrap": "^1.0.0-rc.3",
+    "ember-browserify": "^1.2.0",
     "ember-cli": "~2.16.2",
     "ember-cli-app-version": "^3.0.0",
     "ember-cli-babel": "^6.6.0",
@@ -31,6 +33,7 @@
     "ember-cli-qunit": "^4.0.0",
     "ember-cli-rxjs": "^2.2.0",
     "ember-cli-sass": "^7.0.0",
+    "ember-cli-select-picker": "^2.3.8",
     "ember-cli-shims": "^1.1.0",
     "ember-cli-sri": "^2.1.0",
     "ember-cli-uglify": "^2.0.0",

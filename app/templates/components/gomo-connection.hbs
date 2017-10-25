@@ -1,7 +1,18 @@
 <form class="form-inline">
   <div class="form-group mx-sm-3">
     <label for="inputPassword2" class="sr-only">Host</label>
-    <input type="text" class="form-control" id="host" placeholder="host">
+    {{ input type="text" value=host class="form-control" placeholder="host" }}
   </div>
   <button type="button" {{action "connect"}} class="btn btn-primary">Connect</button>
 </form>
+
+{{
+  select-picker
+  content=content
+  selection=selection
+  action=(action "selectIndices")
+  multiple=true
+  optionGroupPath="group"
+  optionLabelPath="content.label"
+  optionValuePath="content.value"
+}}
